@@ -1,0 +1,140 @@
+body {
+  background-color: #ece5dd;
+  font-family: "Titillium Web", sans-serif !important;
+}
+
+.group,
+nav {
+  box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+  background-color: #24353f;
+}
+
+h1 {
+  color: #17a2b8;
+  letter-spacing: 2px;
+}
+
+input {
+  color: #fff;
+  width: 80%;
+  padding-block: 6px;
+  padding-inline: 12px;
+  margin-block: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  background-color: #24353f;
+  outline: none;
+  transition: background-color 500ms;
+}
+
+input:focus {
+  border-color: cyan;
+}
+
+.button {
+  width: 80%;
+  color: #17a2b8;
+  background-color: #24353f;
+  border: 1px solid #17a2b8;
+  border-radius: 5px;
+  padding-block: 6px;
+  margin-bottom: 25px;
+  text-transform: capitalize;
+  transition: all 500ms;
+}
+
+.button:hover {
+  background-color: #17a2b8;
+  color: #fff;
+}
+
+.link {
+  margin-bottom: 50px;
+  text-align: center;
+  color: #fff;
+}
+
+p::first-letter {
+  text-transform: uppercase;
+}
+
+a {
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#logOutBtn {
+  color: #fff !important;
+  height: 40px;
+  width: 80px;
+  font-size: 18px;
+  text-transform: capitalize;
+  border: 2px solid #ece5dd;
+  background-color: #24353f;
+  transition: all 500ms;
+}
+
+#logOutBtn:hover {
+  background-color: #ece5dd;
+  border: 2px solid #24353f;
+  color: black !important;
+}
+
+.h-80 {
+  height: 80px;
+}
+
+.smart {
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #fff;
+}
+
+.welcome {
+  height: calc(100vh - 80px);
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome div {
+  box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+  padding-inline: 150px;
+  padding-block: 50px;
+  background-color: #24353f;
+}
+
+@media screen and (max-width: 1024px) {
+  section .group {
+    width: 75% !important;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .welcome div {
+    padding-inline: 100px;
+    padding-block: 40px;
+  }
+  section .group {
+    width: 80% !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .welcome div {
+    padding-inline: 50px;
+    padding-block: 20px;
+  }
+  section .group {
+    width: 90% !important;
+  }
+}

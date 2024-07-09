@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Registration</title>
+  </head>
+  <body>
+    <section class="text-center d-flex flex-column align-items-center">
+      <div class="group w-50 text-center mt-5 rounded-5">
+        <h1 class="mt-5 pb-2 fs-1 fw-semibold text-capitalize">
+          smart login system
+        </h1>
+        <form autocomplete="off">
+          <input type="text" placeholder="Enter your name" id="name" />
+          <input
+            type="email"
+            placeholder="Enter your email"
+            id="email"
+            autocomplete="none"
+          />
+          <input
+            type="password"
+            placeholder="Enter your password"
+            id="password"
+          />
+          <p id="exist"></p>
+          <button class="button" type="button" onclick="signUp()">
+            sign up
+          </button>
+        </form>
+        <p class="link">
+          do you have an account?
+          <a class="ps-1" href="login.html">sign in</a>
+        </p>
+      </div>
+    </section>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
